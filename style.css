@@ -1,0 +1,117 @@
+/* Hlavne Nastavenia Dizajnu */
+
+body {
+    background-color: #f5f5f5;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Hlavička a Navigačné Menu */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Obsahová časť stránky */
+
+main {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+.nadpis-prvy {
+    color: rgb(90, 48, 146);
+    text-decoration: underline;
+}
+
+.nadpis-druhy {
+    color: rgb(141, 201, 29);
+    text-decoration: underline wavy;
+}
+
+#nadpis-treti {
+    color: rgb(196, 84, 19);
+    text-decoration: overline;
+}
+
+#nadpis-stvrty {
+    color: rgb(201, 29, 201);
+    text-decoration: overline wavy;
+}
+
+
+/* Korgíci podstránka */
+
+.picture-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 10px;
+}
+
+.pic-text{
+    position: absolute;
+    justify-self: center;
+    color: white;
+    margin: 1rem;
+}
+
+
+
