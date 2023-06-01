@@ -28,7 +28,7 @@ nav {
     justify-content: space-evenly;
     margin: 1rem;
 
-    color: #ffffff;
+    color: white;
     padding: 1rem;
 }
 
@@ -53,9 +53,8 @@ nav {
     padding: 10px;
     border-radius: 20%;
     text-decoration: none;
-    color: #ffffff;
+    color: white;
     transition: 0.5s;
-    font-weight: 100;
 }
 
 .nav-link:hover {
@@ -92,9 +91,20 @@ main {
     justify-content: space-between;
 }
 
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 10px;
+    gap: 1rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
+    border: 1px solid white;
 
     color: white;
     padding: 2rem;
