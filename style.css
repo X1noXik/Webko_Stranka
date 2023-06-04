@@ -1,127 +1,148 @@
+/* Odstranenie marginu a paddingu */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Style pre parent element */
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #100e08;
 }
 
-header {
-    text-align: center;
-    font-weight: 600;
-    font-size: 2rem;
+/* Hlavicka */
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    background-color: transparent;
-    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(9, 174, 196, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.header-index h1 {
+    font-weight: 600;
+    color: white;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    z-index: 100;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
 
-    color: white;
-    padding: 1rem;
-}
-
-.logo {
-    font-size: 1.25rem;
-    color: #08a8dd;
+.header-main h1 {
     font-weight: 600;
-    padding: 5px;
-    border-radius: 20%;
+    color: white;
 }
 
-.nav-items {
+/* Navigacne menu */
+.navigation {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
+    margin-right: 1rem;
 }
 
-.nav-link {
-    font-size: 1rem;
-    background-color: #08a8dd;
-    padding: 10px;
-    border-radius: 20%;
+.navigation a {
     text-decoration: none;
     color: white;
-    transition: 0.5s;
+    transition: all 0.4s ease-in-out;
 }
 
-.nav-link:hover {
-    background-color: #0479a0;
-    border-radius: 0%;
-    transform: translateY(3px);
+.navigation a:link {
+    color: rgb(255, 255, 255);
+}
+  
+.navigation a:visited {
+    color: rgb(255, 255, 255);
 }
 
-.active {
-    background-color: #0479a0;
-    border-radius: 0%;
+.navigation a:hover {
+    color: rgb(173, 164, 164);
+}
+  
+.navigation a:active {
+    color: rgb(0, 255, 255);
 }
 
-main {
+/* Landing page */
+.landing-page {
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
-.content-title {
-    font-weight: 100;
-    color: white;
-    font-size: 2rem;
-}
+    background-image: url(./public/landing-page.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
-.content-box {
+
     width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
+    height: 100vh;
 }
 
-.photo-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 10px;
-    gap: 1rem;
+.landing-info {
+    padding: 1rem;
+    background-color: rgba(9, 174, 196, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
+.landing-info h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Stranka po landing page */
 .content {
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
-    color: white;
-    padding: 2rem;
+.content article {
     margin: 1rem;
-
-    background: rgba(34, 29, 29, 0.1);
-    max-height: fit-content;
-
-    gap: 20px;
+    max-width: 800px;
+    padding: 1rem;
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
-.content ol {
-    margin-left: 1rem;
+.card-holder {
+    margin: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.content h2 {
-    align-self: center;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 table {
@@ -137,28 +158,69 @@ th, td {
 }
 
 th {
-    background-color: rgb(27, 27, 37);
+    background-color: rgb(212, 212, 223);
 }
 
-footer {
+.card-character{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: absolute;
+    gap: 10px;
+    padding: 1rem;
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.card-character img{
+    max-height: 100px;
+    max-height: 100px;
+    border: 5px solid rgb(0, 128, 38);
+}
+
+.skola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.skola-kontakt {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
     bottom: 0;
     width: 100%;
-    color: white;
-    margin: 1rem auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(212, 212, 223);
 }
 
-@media (max-width: 600px) {
-    .content-box {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+
+
+/* Media query */
+@media screen and (max-width: 768px) {
+
+    .landing-info h1 {
+        font-size: 1.5rem;
     }
 
-    footer {
-        position: static;
+    .navigation {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0rem;
     }
-  }
+
+    header h1 {
+        display: none;
+    }
+    
+    .card-holder {
+        flex-direction: column;
+    }
+}
+  
