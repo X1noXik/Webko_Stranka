@@ -229,7 +229,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    position: absolute;
+    position: static;
     padding: 10px;
     background-color: rgb(212, 212, 223);
 }
@@ -317,7 +317,7 @@ footer {
     }
 
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
     }
 
