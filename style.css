@@ -198,6 +198,7 @@ th {
     gap: 1rem;
     padding: 1rem;
     box-shadow: -2px 5px 10px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .peter-info {
@@ -222,6 +223,25 @@ footer {
     background-color: rgb(212, 212, 223);
 }
 
+#list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#list li {
+    padding: 5px 0;
+  }
+  
+  #list li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px; 
+    background-image: url("public/lol_icon.jpg");
+    background-size: contain; 
+    margin-right: 5px;
+  }
 
 
 /* Media query */
@@ -235,6 +255,10 @@ footer {
         width: 100%;
         justify-content: center;
         margin-right: 0rem;
+    }
+
+    .card {
+        gap: 2rem;
     }
 
     header h1 {
