@@ -1,1 +1,0 @@
-# Webko_Stranka
